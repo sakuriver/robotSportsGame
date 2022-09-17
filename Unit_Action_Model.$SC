@@ -1,0 +1,62 @@
+/*							Parts Assembler
+                                  Version 2.04.080624(:
+Parts: 
+	AN\AN07.suf
+	AN\AN09.suf
+	AN\AN13.suf
+	AN\AN15.suf
+	P1\P116.suf
+	RB\RB16.suf
+Info:
+	DisplayOffset: (   0.000   0.000   0.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -68  18 -70 )
+	{	mov ( 2195.18 1274.05 750.077 ) eye deg( 60 ) }
+	{	mov ( 0 0 0 ) target }
+{	mov ( 0 0 250 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.6 0.9 0.9 ) obj an07 /* "AN\AN07.suf" */
+}
+{	mov ( 250 -100 250 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.1 0.3 0.2 ) obj P116 /* "P1\P116.suf" */
+}
+{	mov ( 300 150 250 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.1 -0.3 0.2 ) obj P116 /* "P1\P116.suf" */
+}
+{	mov ( 200 -150 500 ) rotz ( 0 ) roty ( 0 ) rotx ( 40 )
+	scal ( 1 0.6 0.6 ) obj an15 /* "AN\AN15.suf" */
+}
+{	mov ( 200 300 450 ) rotz ( 0 ) roty ( 0 ) rotx ( -40 )
+	scal ( 1 -0.6 0.6 ) obj an15 /* "AN\AN15.suf" */
+}
+{	mov ( 0 0 -300 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 1 1.5 1.7 ) obj P116 /* "P1\P116.suf" */
+}
+{	mov ( 0 -350 -250 ) rotz ( 0 ) roty ( -40 ) rotx ( 90 )
+	scal ( 0.7 0.6 0.7 ) obj an13 /* "AN\AN13.suf" */
+}
+{	mov ( 0 350 -250 ) rotz ( 0 ) roty ( -40 ) rotx ( -90 )
+	scal ( 0.7 -0.6 0.7 ) obj an13 /* "AN\AN13.suf" */
+}
+{	mov ( 50 -200 -850 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.5 1 0.5 ) obj rb16 /* "RB\RB16.suf" */
+}
+{	mov ( 100 250 -850 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.5 -1 0.5 ) obj rb16 /* "RB\RB16.suf" */
+}
+{	mov ( 0 -200 -650 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+	scal ( 0.5 1 0.6 ) obj an09 /* "AN\AN09.suf" */
+}
+{	mov ( 0 200 -650 ) rotz ( 0 ) roty ( 0 ) rotx ( 10 )
+	scal ( 0.5 -1 0.6 ) obj an09 /* "AN\AN09.suf" */
+}
+}

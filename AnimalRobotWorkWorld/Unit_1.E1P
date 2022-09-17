@@ -1,0 +1,69 @@
+/*							Parts Assembler
+                                  Version 2.04.080624(:
+Parts: 
+	( "life\animal\body\bst.suf" "‚Þ‚Ë" "‚Ç‚¤‚Ô‚Â ‚©‚ç‚¾" "" )
+	( "life\animal\face\ear03.suf" "‚¤‚³‚¬Ž¨" "‚Ç‚¤‚Ô‚Â ‚©‚¨" "" )
+	( "life\animal\face\eye01.suf" "–Ú01" "‚Ç‚¤‚Ô‚Â ‚©‚¨" "" )
+	( "life\animal\face\nose01.suf" "‚Í‚È" "‚Ç‚¤‚Ô‚Â ‚©‚¨" "" )
+	( "life\animal\hand_foot\armtoy01.suf" "‚¤‚Å-‚Ê‚¢‚®‚é‚Ý1" "‚Ç‚¤‚Ô‚Â Žè‘«" "" )
+	( "life\animal\hand_foot\fttoy01.suf" "‘«-‚Ê‚¢‚®‚é‚Ý1" "‚Ç‚¤‚Ô‚Â Žè‘«" "" )
+	( "life\animal\head\hd02.suf" "‚¤‚³‚¬" "‚Ç‚¤‚Ô‚Â ‚ ‚½‚Ü" "" )
+	( "mecha\sfcockpit\F106.suf" "SF‚»‚¤‚¶‚ã‚¤‚¹‚«05" "SF ‚»‚¤‚¶‚ã‚¤‚¹‚«" "" )
+Light: (   50   50  -71 ) ( 1.00 1.00 1.00)
+BackGround: "nature/forest"
+MotionPreview: 15 36 ( 5710.79 3474.97 1410.36 ) ( 2587.75 -2506.70 -858.20 )
+Info:
+	DisplayOffset: (   0.000   0.000   0.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 0
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 5
+	SelectedOnly: 0
+	DispRelative: 0
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -70   3 -70 )
+	{	mov ( 2394.05 2165.47 1077.84 ) eye deg( 45 ) }
+	{	mov ( 0 0 0 ) target }
+	{	mov ( -164.26 -200 406.66 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.858 0.78 0.858 ) obj hd02 /* "life\animal\head\hd02.suf" RGB_F1FCBB Creature Creature */
+	}
+	{	mov ( -164.26 -434 640.66 ) rotz ( 0 ) roty ( 0 ) rotx ( 30 )
+		scal ( 0.78 0.78 0.39 ) obj ear03 /* "life\animal\face\ear03.suf" RGB_F1FCBB Creature Creature */
+	}
+	{	mov ( -164.26 -44 562.66 ) rotz ( 0 ) roty ( 0 ) rotx ( -30 )
+		scal ( 0.78 -0.78 0.468 ) obj ear03 /* "life\animal\face\ear03.suf" RGB_F1FCBB Creature Creature */
+	}
+	{	mov ( -202 -200 -162.2 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.468 0.624 0.54 ) obj "10bust" /* "life\animal\body\bst.suf" RGB_F1FCBB Creature Creature */
+	}
+	{	mov ( -164.26 -590 367.66 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.78 0.78 0.39 ) obj armtoy01 /* "life\animal\hand_foot\armtoy01.suf" RGB_F1FCBB Creature Creature */
+	}
+	{	mov ( -47.26 190 406.66 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.78 -0.78 0.546 ) obj armtoy01 /* "life\animal\hand_foot\armtoy01.suf" RGB_F1FCBB Creature Creature */
+	}
+	{	mov ( 69.74 -317 601.66 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.78 0.78 0.78 ) obj eye01 /* "life\animal\face\eye01.suf" RGB_000000 Creature Creature */
+	}
+	{	mov ( 69.74 -83 601.66 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.78 -0.78 0.78 ) obj eye01 /* "life\animal\face\eye01.suf" RGB_000000 Creature Creature */
+	}
+	{	mov ( 186.74 -161 445.66 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.78 0.936 0.78 ) obj nose01 /* "life\animal\face\nose01.suf" RGB_000000 Creature Creature */
+	}
+	{	mov ( -50 -400 -400 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.5 0.8 0.6 ) obj fttoy01 /* "life\animal\hand_foot\fttoy01.suf" RGB_F1FCBB Creature Creature */
+	}
+	{	mov ( -50 0 -450 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.5 -0.8 0.6 ) obj fttoy01 /* "life\animal\hand_foot\fttoy01.suf" RGB_F1FCBB Creature Creature */
+	}
+	{	mov ( 0 400 -50 ) rotz ( 0 ) roty ( 80 ) rotx ( -85 )
+		scal ( 2.3 3.1 1 ) obj F106 /* "mecha\sfcockpit\F106.suf" RedGlow NO MechanicGlow */
+	}
+}

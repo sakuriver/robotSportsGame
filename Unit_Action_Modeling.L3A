@@ -1,0 +1,55 @@
+/*							Motion Editor
+                                  Version 2.04.080709 (:
+Frame: 1 100
+Mechanic:
+	Unit_Connect
+Info:
+	DisplayOffset: (   0.000   0.000   0.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 0
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+	PersGridFlag: 1
+Motion: 0
+	Mechanic: CAMERA
+	Bezier:
+		( 2375.92 -1781.94 1781.94 )
+	Angle:
+		  1 45
+	CameraRotation:
+		  1 0
+Motion: 0
+	Mechanic: TARGET
+	Frame: 1 100
+	Bezier:
+		( 0 0 0 )
+	Position:
+Motion: 0
+	Mechanic: Unit_Connect.l3c
+	Frame: 1 100
+	Bezier:
+		( 0 0 0 )
+		( 0 0 0 )
+		( 0 0 0 )
+		( 0 0 0 )
+	Position:
+		  1 0 0 1
+		100 1 0 1
+	Direction:
+		  1 ( 0 0 0 ) 0 Forward
+		100 ( 0 0 0 ) 0 Forward
+	Scale:
+		  1 ( 1 1 1 )
+		100 ( 1 1 1 )
+	Parameter:
+		  1 ( labelled 6 ( HEAD move ( 0 0 0 ) rot ( 0 0 0 ) ) ( BREAST move ( 0 0 0 ) rot ( 0 0 0 ) ) ( RHAND move ( 0 0 0 ) rot ( 0 0 0 ) ) ( LHAND move ( 0 0 0 ) rot ( 0 0 0 ) ) ( LFOOT move ( 0 0 0 ) rot ( 0 0 0 ) ) ( RFOOT move ( 0 0 0 ) rot ( 0 0 0 ) ) )
+		 31 ( labelled 6 ( HEAD move ( 0 0 0 ) rot ( 0 0 0 ) ) ( BREAST move ( 0 0 0 ) rot ( 0 0 0 ) ) ( RHAND move ( 0 0 0 ) rot ( 0 -50 0 ) ) ( LHAND move ( 0 0 0 ) rot ( 0 0 0 ) ) ( LFOOT move ( 0 0 0 ) rot ( 0 0 0 ) ) ( RFOOT move ( 0 0 0 ) rot ( 0 0 0 ) ) )
+		 60 ( labelled 6 ( HEAD move ( 0 0 0 ) rot ( 0 0 0 ) ) ( BREAST move ( 0 0 0 ) rot ( 0 0 0 ) ) ( RHAND move ( 0 0 0 ) rot ( 0 0 0 ) ) ( LHAND move ( 0 0 0 ) rot ( 0 -30 0 ) ) ( LFOOT move ( 0 0 0 ) rot ( 0 0 0 ) ) ( RFOOT move ( 0 0 0 ) rot ( 0 -30 0 ) ) )
+		100 ( labelled 6 ( HEAD move ( 0 0 0 ) rot ( 0 0 0 ) ) ( BREAST move ( 0 0 0 ) rot ( 0 0 0 ) ) ( RHAND move ( 0 0 0 ) rot ( 0 0 0 ) ) ( LHAND move ( 0 0 0 ) rot ( 0 0 0 ) ) ( LFOOT move ( 0 0 0 ) rot ( 0 0 0 ) ) ( RFOOT move ( 0 0 0 ) rot ( 0 0 0 ) ) )
+:)*/

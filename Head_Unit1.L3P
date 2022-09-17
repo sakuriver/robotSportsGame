@@ -1,0 +1,34 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	AN\AN07.suf
+	AN\AN09.suf
+	AN\AN13.suf
+	AN\AN15.suf
+	P1\P116.suf
+	RB\RB16.suf
+Light: (   32   32  -89 ) ( 1.00 1.00 1.00)
+Info:
+	DisplayOffset: (   0.000   0.000   0.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr C1_NO_M1 { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -18 -68 -70 )
+	{	mov ( 2195.18 1274.05 750.077 ) eye deg( 60 ) }
+	{	mov ( 0 0 0 ) target }
+	{	mov ( 0 0 250 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+		scal ( 0.6 0.9 0.9 ) obj an07 /* "AN\AN07.suf" atr "C1_NO_M1" */
+	}
+}

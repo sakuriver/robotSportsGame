@@ -1,0 +1,33 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	Body.SUF
+	LeftArm.SUF
+	Leg.SUF
+	AN\AN07.suf
+Light: (   32   32  -89 ) ( 1.00 1.00 1.00)
+Info:
+	DisplayOffset: (   0.000 -157.000  64.941 )
+	DisplayScale: 0.176776695297
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 1
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+Palette:
+	0: atr "#01" { col ( rgb ( 0.950 1.000 0.150 ) ) amb ( 0.500 ) dif ( 0.500 ) opt ( celllookedge draw 0.000 rate 0.005 shader 3 ( 0.000 0.500 0.250 ) ( 0.500 0.626 0.750 ) ( 0.626 1.000 1.000 ) ) }
+	1: atr noname { col ( 1.000 ) amb ( 0.200 ) dif ( 0.800 ) spc ( 0.700 1.000 0.000 ) }
+*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -19 -68 -70 )
+	{	mov ( 1783.58 993.954 2186.83 ) eye deg( 45 ) }
+	{	mov ( 0 0 0 ) target }
+	{	mov ( 0 -250 -50 ) rotz ( 80 ) roty ( 0 ) rotx ( -60 )
+		scal ( 1 1 0.6 ) obj LeftArm /* LeftArm.SUF atr "noname" */
+	}
+}

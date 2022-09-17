@@ -1,0 +1,52 @@
+/*							Parts Assembler
+                                  Version 2.04.080709(:
+Parts: 
+	Body.SUF
+	LeftArm.SUF
+	Leg.SUF
+	AN\AN07.suf
+Pose:
+Light: (   32   32  -89 ) ( 1.00 1.00 1.00)
+Info:
+	DisplayOffset: (   0.000   0.000   0.000 )
+	DisplayScale: 0.125000000000
+	MeshFlag: 1
+	MeshSpacing: 200
+	ShowStatus: 0
+	ShowAttr: 1
+	GridFlag: 1
+	GridSpacing: 50
+	RotSpacing: 10
+	SelectedOnly: 0
+	DispRelative: 0
+:)*/
+fram
+{
+	light pal( rgb ( 1.00 1.00 1.00 ) -70 -10 -70 )
+	{	mov ( 1200 -900 900 ) eye deg( 45 ) }
+	{	mov ( 0 0 0 ) target }
+  { mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+    /* Unit Label: HEAD */
+    { obj Action_Unit_Head_1 (: Action_Unit_Head_1.l3p :) }
+    { mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+      /* Unit Moveable Label: BREAST */
+      { obj Action_Unit_Body_1 (: Action_Unit_Body_1.l3p :) }
+      { mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+        /* Unit Moveable Label: RHAND CounterLabel: LHAND */
+        { obj Action_Unit_LeftArm_1 (: Action_Unit_LeftArm_1.l3p :) }
+        { mov ( 0 550 -50 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+          /* Unit Moveable Label: LHAND CounterLabel: RHAND */
+          { obj Action_Unit_LeftArm_1 (: Action_Unit_LeftArm_1.l3p :) }
+        }
+        { mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+          /* Unit Moveable Label: LFOOT CounterLabel: RFOOT */
+          { obj Action_Unit_LeftLeg_1 (: Action_Unit_LeftLeg_1.l3p :) }
+        }
+      }
+      { mov ( 0 0 0 ) rotz ( 0 ) roty ( 0 ) rotx ( 0 )
+        /* Unit Moveable Label: RFOOT CounterLabel: LFOOT */
+        { obj Action_Unit_RightLeg_1 (: Action_Unit_RightLeg_1.l3p :) }
+      }
+    }
+  }
+}
